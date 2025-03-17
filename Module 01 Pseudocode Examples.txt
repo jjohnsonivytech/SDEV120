@@ -1,0 +1,66 @@
+// Ver 1.0  modified on 03/17/2025 by jej
+
+// The below should be used as an example and not simply copied for your assignment.
+
+
+// Exercise 1 
+// This pseudocode is intended to compute the number of miles per gallon you get with your automobile
+
+START
+    PROMPT user for the number of miles driven
+    INPUT miles_driven
+    
+    PROMPT user for the amount of fuel used in gallons
+    INPUT fuel_used
+    
+    IF fuel_used is greater than 0 THEN
+        mpg = miles_driven / fuel_used
+        DISPLAY "Your miles per gallon is: ", mpg
+    ELSE
+        DISPLAY "Fuel used must be greater than 0."
+    END IF
+END
+
+
+// Exercise 2
+// This pseudocode is intended to describe computing the daily cost of your rent in a 30-day month
+
+START
+    PROMPT user for the total monthly rent amount
+    INPUT monthly_rent
+    
+    SET days_in_month = 30
+    
+    IF monthly_rent is greater than 0 THEN
+        daily_rent = monthly_rent / days_in_month
+        DISPLAY "The daily cost of your rent is: ", daily_rent
+    ELSE
+        DISPLAY "Monthly rent must be greater than 0."
+    END IF
+END
+
+
+// Exercise 3
+// This program accepts a user's monthly pay and rent, utilities, and grocery bills and displays the amount available for discretionary spending (which might be negative) Your program should output the pay and the total bills as well as the remaining discretionary amount.
+
+START
+    PROMPT user for their monthly pay
+    INPUT monthly_pay
+    
+    PROMPT user for their monthly rent
+    INPUT rent
+    
+    PROMPT user for their monthly utilities bill
+    INPUT utilities
+    
+    PROMPT user for their monthly grocery bill
+    INPUT groceries
+    
+    total_bills = rent + utilities + groceries
+    
+    discretionary_amount = monthly_pay - total_bills
+    
+    DISPLAY "Your monthly pay is: ", monthly_pay
+    DISPLAY "Your total bills are: ", total_bills
+    DISPLAY "Your remaining discretionary amount is: ", discretionary_amount
+END
